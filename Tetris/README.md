@@ -57,9 +57,9 @@ Uma feature que achamos interessante de criar e que só nos apercebemos no final
 independentes para uma melhor organização do código.
 
 **Pattern:**
-- [Model](https://github.com/FEUP-LDTS-2022/project-l13gr05/tree/main/src/main/java/tetris/Model): Representa a data.
-- [View](https://github.com/FEUP-LDTS-2022/project-l13gr05/tree/main/src/main/java/tetris/View): Envia as ações do jogador.
-- [Controller](https://github.com/FEUP-LDTS-2022/project-l13gr05/tree/main/src/main/java/tetris/Controller): Interpreta as ações do jogador.
+- [Model](https://github.com/qsimaor/projects/tree/main/Tetris/src/main/java/tetris/Model): Representa a data.
+- [View](https://github.com/qsimaor/projects/tree/main/Tetris/src/main/java/tetris/View): Envia as ações do jogador.
+- [Controller](https://github.com/qsimaor/projects/tree/main/Tetris/src/main/java/tetris/Controller): Interpreta as ações do jogador.
 
 **Implementação:**
 
@@ -74,8 +74,8 @@ independentes para uma melhor organização do código.
 
 **1) Pattern:**
 
-- [Peça](https://github.com/FEUP-LDTS-2022/project-l13gr05/blob/main/src/main/java/tetris/Model/Peca.java): Contém todos os atributos e métodos de uma peça.
-- [Peças](https://github.com/FEUP-LDTS-2022/project-l13gr05/tree/main/src/main/java/tetris/Model/Pecas): As várias peças com extensões.
+- [Peça](https://github.com/qsimaor/projects/blob/main/Tetris/src/main/java/tetris/Model/Pecas/Peca.java): Contém todos os atributos e métodos de uma peça.
+- [Peças](https://github.com/qsimaor/projects/tree/main/Tetris/src/main/java/tetris/Model/Pecas): As várias peças com extensões.
 
 **Implementação:**
 
@@ -84,8 +84,8 @@ independentes para uma melhor organização do código.
 
 **2) Pattern:**
 
-- [Menu](https://github.com/FEUP-LDTS-2022/project-l13gr05/blob/main/src/main/java/tetris/Controller/Menu.java): Contém todos os atributos e métodos de um menu.
-- [Menus](https://github.com/FEUP-LDTS-2022/project-l13gr05/tree/main/src/main/java/tetris/Controller/Menus): Os vários menus com extensões.
+- [Menu](https://github.com/qsimaor/projects/blob/main/Tetris/src/main/java/tetris/Controller/Menus/Menu.java): Contém todos os atributos e métodos de um menu.
+- [Menus](https://github.com/qsimaor/projects/tree/main/Tetris/src/main/java/tetris/Controller/Menus): Os vários menus com extensões.
 
 **Implementação:**
 
@@ -128,4 +128,3 @@ Não existe nenhuma classe que não contenha métodos próprios.
 
 - Rodrigo Ribeiro: 50%
 - Simão Rodrigues: 50%
-
