@@ -1,0 +1,4 @@
+C:/Users/phill/Desktop/FEUP/2_2S/DA/DA_Projeto1/cmake-build-debug/CMakeFiles/DA_Projeto1.dir
+C:/Users/phill/Desktop/FEUP/2_2S/DA/DA_Projeto1/cmake-build-debug/CMakeFiles/Doxygen.dir
+C:/Users/phill/Desktop/FEUP/2_2S/DA/DA_Projeto1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/phill/Desktop/FEUP/2_2S/DA/DA_Projeto1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

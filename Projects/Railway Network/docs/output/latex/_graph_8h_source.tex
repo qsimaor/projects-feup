@@ -1,0 +1,48 @@
+\hypertarget{_graph_8h_source}{}\doxysection{Graph.\+h}
+\label{_graph_8h_source}\index{C:/Users/phill/Desktop/FEUP/2\_2S/DA/DA\_Projeto1/code/data\_structures/Graph.h@{C:/Users/phill/Desktop/FEUP/2\_2S/DA/DA\_Projeto1/code/data\_structures/Graph.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef GRAPH}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define GRAPH}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <queue>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <limits>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}VertexEdge.h"{}}}
+\DoxyCodeLine{11 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_graph}{Graph}} \{}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_graph_ae4c72b8ac4d693c49800a4c7e273654f}{Graph}}();}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_vertex}{Vertex}} *\mbox{\hyperlink{class_graph_a9a33a660b00c9bbb437c5fa027605a4e}{findVertex}}(\textcolor{keywordtype}{string} name) \textcolor{keyword}{const};}
+\DoxyCodeLine{37     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_ad2953523171e57b6999699b8f0b765c2}{addVertex}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&name,\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&district,\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&municipality,\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&township,\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&line);}
+\DoxyCodeLine{47     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_afb5d9681d23519968999d294439eaf07}{addEdge}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&sta\_A, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&sta\_B, \textcolor{keywordtype}{double} cap, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&service);}
+\DoxyCodeLine{57     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_a76b90d608319f0364007e74cfc27bddb}{addBidirectionalEdge}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&sta\_A, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&sta\_B, \textcolor{keywordtype}{double} cap, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&service);}
+\DoxyCodeLine{63     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_graph_abb5e0517e2979c54eebdafc2a9875e8f}{getNumVertex}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{68     vector<Vertex *> \mbox{\hyperlink{class_graph_a56576f9c2ee0afadc4b77dcbe3acb704}{getVertexSet}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{76     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_a4440c41114f08aaa2ecff4030571eb29}{parser}}(\textcolor{keywordtype}{string} stations\_p, \textcolor{keywordtype}{string} network\_p);}
+\DoxyCodeLine{84     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_graph_a21a288d7448f3855a3c685413b575e5a}{edmondsKarp}}(\textcolor{keywordtype}{string} source, \textcolor{keywordtype}{string} target);}
+\DoxyCodeLine{90     vector<pair<pair<string,string>,\textcolor{keywordtype}{double}>> \mbox{\hyperlink{class_graph_a7dfcf05f77f02fce6a5ee771a4c1735f}{getPairs\_MostAmountOfTrains}}();}
+\DoxyCodeLine{97     vector<pair<string,double>> \mbox{\hyperlink{class_graph_ae74e2d268d0adec58018809b8457077c}{budgetMunicipalities}}(\textcolor{keywordtype}{int} k);}
+\DoxyCodeLine{104     vector<pair<string,double>> \mbox{\hyperlink{class_graph_a077f8b5d89bdaa9118decb2d9374ca69}{budgetDistricts}}(\textcolor{keywordtype}{int} k);}
+\DoxyCodeLine{111     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_graph_aac1f04ac197e776347a9fbdede7be5cf}{maxTrainsAtStation}}(\textcolor{keywordtype}{string} station);}
+\DoxyCodeLine{117     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_ab1788f44948577630692ac328646a206}{max\_trains\_min\_cost}}(\textcolor{keywordtype}{string} station1, \textcolor{keywordtype}{string} station2);}
+\DoxyCodeLine{123     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_a9de10ef977cb8a4554f62046b5197b7a}{removeVertex}}(\textcolor{keywordtype}{string} s);}
+\DoxyCodeLine{131     vector<pair<string,double>> \mbox{\hyperlink{class_graph_aec2f5a38fae1b0614cb1f5cb175768cd}{differenceMaxFlowFailures}}(\mbox{\hyperlink{class_graph}{Graph}} f,\textcolor{keywordtype}{int} k);}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{133 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{137     std::vector<Vertex *> \mbox{\hyperlink{class_graph_aa9b0a6d8ad43c5eabaca5a7140bcc8b6}{vertexSet}};    \textcolor{comment}{// vertex set}}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139     \textcolor{keywordtype}{void} testAndVisit(queue< Vertex*> \&q, \mbox{\hyperlink{class_edge}{Edge}} *e, \mbox{\hyperlink{class_vertex}{Vertex}} *w, \textcolor{keywordtype}{double} residual);}
+\DoxyCodeLine{140     \textcolor{keywordtype}{bool} findAugmentingPath(\mbox{\hyperlink{class_vertex}{Vertex}} *s, \mbox{\hyperlink{class_vertex}{Vertex}} *t);}
+\DoxyCodeLine{141     \textcolor{keywordtype}{double} findMinResidualAlongPath(\mbox{\hyperlink{class_vertex}{Vertex}} *s, \mbox{\hyperlink{class_vertex}{Vertex}} *t);}
+\DoxyCodeLine{142     \textcolor{keywordtype}{void} augmentFlowAlongPath(\mbox{\hyperlink{class_vertex}{Vertex}} *s, \mbox{\hyperlink{class_vertex}{Vertex}} *t, \textcolor{keywordtype}{double} f);}
+\DoxyCodeLine{143     \textcolor{keywordtype}{int} maxFlow\_minCost(\textcolor{keywordtype}{string} source, \textcolor{keywordtype}{string} target);}
+\DoxyCodeLine{144     \textcolor{keywordtype}{bool} bfs\_for\_max\_flow(\mbox{\hyperlink{class_vertex}{Vertex}} *s, \mbox{\hyperlink{class_vertex}{Vertex}} *t);}
+\DoxyCodeLine{145 \};}
+\DoxyCodeLine{146 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
