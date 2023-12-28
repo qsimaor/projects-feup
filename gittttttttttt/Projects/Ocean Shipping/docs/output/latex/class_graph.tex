@@ -1,0 +1,201 @@
+\hypertarget{class_graph}{}\doxysection{Graph Class Reference}
+\label{class_graph}\index{Graph@{Graph}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_graph_ae4c72b8ac4d693c49800a4c7e273654f}{Graph}} ()
+\item 
+\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ \mbox{\hyperlink{class_graph_af0496da56e46353c33df985ca3d3f7b2}{find\+Vertex}} (int name) const
+\item 
+bool \mbox{\hyperlink{class_graph_af032407814f02dea8dd311d804fd403d}{add\+Vertex}} (const int \&name)
+\item 
+bool \mbox{\hyperlink{class_graph_aa2c16df336fbd1da65e36e1e18ec5b6b}{add\+Vertex}} (const int \&name, double longitude, double latitude)
+\item 
+bool \mbox{\hyperlink{class_graph_ab5a9064f70f4e698d0e3ce32b6dc2d9d}{add\+Edge}} (const int \&ori, const int \&dest, double cap)
+\item 
+bool \mbox{\hyperlink{class_graph_a128a557f33e4ac64f87ae2108aa3f279}{add\+Bidirectional\+Edge}} (const int \&ori, const int \&dest, double cap)
+\item 
+int \mbox{\hyperlink{class_graph_abb5e0517e2979c54eebdafc2a9875e8f}{get\+Num\+Vertex}} () const
+\item 
+vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ \mbox{\hyperlink{class_graph_a56576f9c2ee0afadc4b77dcbe3acb704}{get\+Vertex\+Set}} () const
+\item 
+\mbox{\Hypertarget{class_graph_a66480bc38a396c42c4b5643cca61c09d}\label{class_graph_a66480bc38a396c42c4b5643cca61c09d}} 
+bool {\bfseries parser\+\_\+onefile} (const string \&file\+\_\+p)
+\item 
+bool \mbox{\hyperlink{class_graph_ad2a7126298fb5af008f4f7bb9b903f6c}{parser\+\_\+twofiles}} (const string \&edges\+\_\+p, const string \&nodes\+\_\+p)
+\item 
+void \mbox{\hyperlink{class_graph_aca40668b0ad5c30657629b3bcdf251ef}{remove\+Vertex}} (int s)
+\item 
+\mbox{\Hypertarget{class_graph_ac09f552dbd0eae576c0b24354c8e4970}\label{class_graph_ac09f552dbd0eae576c0b24354c8e4970}} 
+void {\bfseries backtrack\+\_\+tsp} ()
+\item 
+void \mbox{\hyperlink{class_graph_aacb4ddbe2dd8c7173ef845cd9a6153c3}{backtrack\+\_\+tsp\+\_\+rec}} (std\+::vector$<$ int $>$ \&path, std\+::vector$<$ bool $>$ \&visited, double \&min\+\_\+cost, double cost\+\_\+so\+\_\+far)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_graph_aa9b0a6d8ad43c5eabaca5a7140bcc8b6}\label{class_graph_aa9b0a6d8ad43c5eabaca5a7140bcc8b6}} 
+std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ {\bfseries vertex\+Set}
+\begin{DoxyCompactList}\small\item\em Vector that stores the vertices (\mbox{\hyperlink{class_vertex}{Vertex}}) of a graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graph_ae4c72b8ac4d693c49800a4c7e273654f}\label{class_graph_ae4c72b8ac4d693c49800a4c7e273654f}} 
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{Graph()}{Graph()}}
+{\footnotesize\ttfamily Graph\+::\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor of the graph class. Time Complexity\+: O(1). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graph_a128a557f33e4ac64f87ae2108aa3f279}\label{class_graph_a128a557f33e4ac64f87ae2108aa3f279}} 
+\index{Graph@{Graph}!addBidirectionalEdge@{addBidirectionalEdge}}
+\index{addBidirectionalEdge@{addBidirectionalEdge}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{addBidirectionalEdge()}{addBidirectionalEdge()}}
+{\footnotesize\ttfamily bool Graph\+::add\+Bidirectional\+Edge (\begin{DoxyParamCaption}\item[{const int \&}]{ori,  }\item[{const int \&}]{dest,  }\item[{double}]{cap }\end{DoxyParamCaption})}
+
+Adds an edge to a graph, with given info about a bidirectional connection between two train stations. Time Complexity\+: O(\+V) \mbox{[}V = Number of Vertices\mbox{]}. 
+\begin{DoxyParams}{Parameters}
+{\em sta\+\_\+A} & String that stores the name of the first train station, that also represents a \mbox{\hyperlink{class_vertex}{Vertex}}. \\
+\hline
+{\em sta\+\_\+B} & String that stores the name of the second train station, that also represents a \mbox{\hyperlink{class_vertex}{Vertex}}. \\
+\hline
+{\em cap} & Double that stores the capacity of this connection between two train stations. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if successful, and false if the source or destination vertex does not exist. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_ab5a9064f70f4e698d0e3ce32b6dc2d9d}\label{class_graph_ab5a9064f70f4e698d0e3ce32b6dc2d9d}} 
+\index{Graph@{Graph}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{addEdge()}{addEdge()}}
+{\footnotesize\ttfamily bool Graph\+::add\+Edge (\begin{DoxyParamCaption}\item[{const int \&}]{ori,  }\item[{const int \&}]{dest,  }\item[{double}]{cap }\end{DoxyParamCaption})}
+
+Adds an edge to a graph, with given info about a unidirectional connection between two train stations. Time Complexity\+: O(\+V) \mbox{[}V = Number of Vertices\mbox{]}. 
+\begin{DoxyParams}{Parameters}
+{\em sta\+\_\+A} & String that stores the name of the source train station, that also represents a \mbox{\hyperlink{class_vertex}{Vertex}}. \\
+\hline
+{\em sta\+\_\+B} & String that stores the name of the target train station, that also represents a \mbox{\hyperlink{class_vertex}{Vertex}}. \\
+\hline
+{\em cap} & Double that stores the capacity of this connection between two train stations. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if successful, and false if the source or destination vertex does not exist. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_af032407814f02dea8dd311d804fd403d}\label{class_graph_af032407814f02dea8dd311d804fd403d}} 
+\index{Graph@{Graph}!addVertex@{addVertex}}
+\index{addVertex@{addVertex}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{addVertex()}{addVertex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Graph\+::add\+Vertex (\begin{DoxyParamCaption}\item[{const int \&}]{name }\end{DoxyParamCaption})}
+
+Adds a vertex to a graph, with given info about a specific train station. Time Complexity\+: O(\+V) \mbox{[}V = Number of Vertices\mbox{]}. 
+\begin{DoxyParams}{Parameters}
+{\em name} & String that represents the \mbox{\hyperlink{class_vertex}{Vertex}} and stores the name of the train station. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if successful, and false if a vertex with that name already exists. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_aa2c16df336fbd1da65e36e1e18ec5b6b}\label{class_graph_aa2c16df336fbd1da65e36e1e18ec5b6b}} 
+\index{Graph@{Graph}!addVertex@{addVertex}}
+\index{addVertex@{addVertex}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{addVertex()}{addVertex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Graph\+::add\+Vertex (\begin{DoxyParamCaption}\item[{const int \&}]{name,  }\item[{double}]{longitude,  }\item[{double}]{latitude }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em longitude} & \\
+\hline
+{\em latitude} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_aacb4ddbe2dd8c7173ef845cd9a6153c3}\label{class_graph_aacb4ddbe2dd8c7173ef845cd9a6153c3}} 
+\index{Graph@{Graph}!backtrack\_tsp\_rec@{backtrack\_tsp\_rec}}
+\index{backtrack\_tsp\_rec@{backtrack\_tsp\_rec}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{backtrack\_tsp\_rec()}{backtrack\_tsp\_rec()}}
+{\footnotesize\ttfamily void Graph\+::backtrack\+\_\+tsp\+\_\+rec (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{path,  }\item[{std\+::vector$<$ bool $>$ \&}]{visited,  }\item[{double \&}]{min\+\_\+cost,  }\item[{double}]{cost\+\_\+so\+\_\+far }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+{\em visited} & \\
+\hline
+{\em min\+\_\+cost} & \\
+\hline
+{\em cost\+\_\+so\+\_\+far} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graph_af0496da56e46353c33df985ca3d3f7b2}\label{class_graph_af0496da56e46353c33df985ca3d3f7b2}} 
+\index{Graph@{Graph}!findVertex@{findVertex}}
+\index{findVertex@{findVertex}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{findVertex()}{findVertex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ Graph\+::find\+Vertex (\begin{DoxyParamCaption}\item[{int}]{name }\end{DoxyParamCaption}) const}
+
+Auxiliary function to find a vertex with a given ID. Time Complexity\+: O(\+V) \mbox{[}V = Number of Vertices\mbox{]}. 
+\begin{DoxyParams}{Parameters}
+{\em name} & String that represents the \mbox{\hyperlink{class_vertex}{Vertex}} and the name of the train station. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_vertex}{Vertex}} of a graph represented by the string name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_abb5e0517e2979c54eebdafc2a9875e8f}\label{class_graph_abb5e0517e2979c54eebdafc2a9875e8f}} 
+\index{Graph@{Graph}!getNumVertex@{getNumVertex}}
+\index{getNumVertex@{getNumVertex}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{getNumVertex()}{getNumVertex()}}
+{\footnotesize\ttfamily int Graph\+::get\+Num\+Vertex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the number of vertices (stations) in the graph (train network). Time Complexity\+: O(1). \begin{DoxyReturn}{Returns}
+Integer that stores the number of vertices (\mbox{\hyperlink{class_vertex}{Vertex}}) in the graph. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_a56576f9c2ee0afadc4b77dcbe3acb704}\label{class_graph_a56576f9c2ee0afadc4b77dcbe3acb704}} 
+\index{Graph@{Graph}!getVertexSet@{getVertexSet}}
+\index{getVertexSet@{getVertexSet}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{getVertexSet()}{getVertexSet()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ Graph\+::get\+Vertex\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_ad2a7126298fb5af008f4f7bb9b903f6c}\label{class_graph_ad2a7126298fb5af008f4f7bb9b903f6c}} 
+\index{Graph@{Graph}!parser\_twofiles@{parser\_twofiles}}
+\index{parser\_twofiles@{parser\_twofiles}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{parser\_twofiles()}{parser\_twofiles()}}
+{\footnotesize\ttfamily bool Graph\+::parser\+\_\+twofiles (\begin{DoxyParamCaption}\item[{const string \&}]{edges\+\_\+p,  }\item[{const string \&}]{nodes\+\_\+p }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em stations\+\_\+p} & \\
+\hline
+{\em network\+\_\+p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_aca40668b0ad5c30657629b3bcdf251ef}\label{class_graph_aca40668b0ad5c30657629b3bcdf251ef}} 
+\index{Graph@{Graph}!removeVertex@{removeVertex}}
+\index{removeVertex@{removeVertex}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{removeVertex()}{removeVertex()}}
+{\footnotesize\ttfamily void Graph\+::remove\+Vertex (\begin{DoxyParamCaption}\item[{int}]{s }\end{DoxyParamCaption})}
+
+Removes a \mbox{\hyperlink{class_vertex}{Vertex}} from the vertex\+Set and removes the edges that are associated with it. Time Complexity\+: O(V + E) \mbox{[}V = Number of Vertices $\vert$ E = Number of Edges\mbox{]}. 
+\begin{DoxyParams}{Parameters}
+{\em s} & String that stores the name of the chosen train station, that also represents a \mbox{\hyperlink{class_vertex}{Vertex}}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/phill/\+Desktop/\+FEUP/2\+\_\+2\+S/\+DA/\+DA\+\_\+\+Projeto2/code/data\+\_\+structures/Graph.\+h\item 
+C\+:/\+Users/phill/\+Desktop/\+FEUP/2\+\_\+2\+S/\+DA/\+DA\+\_\+\+Projeto2/code/data\+\_\+structures/Graph.\+cpp\end{DoxyCompactItemize}
