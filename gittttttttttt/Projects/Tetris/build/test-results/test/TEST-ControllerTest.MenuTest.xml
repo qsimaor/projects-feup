@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ControllerTest.MenuTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-01-19T13:33:35" hostname="SIMAO" time="0.039">
-  <properties/>
-  <testcase name="atualizarFimJogoTest()" classname="ControllerTest.MenuTest" time="0.027"/>
-  <testcase name="verificarImputTest1()" classname="ControllerTest.MenuTest" time="0.01"/>
-  <testcase name="verificarImputTest2()" classname="ControllerTest.MenuTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -1,3 +1,0 @@
-C:/Users/simao/OneDrive/Desktop/AED2223_G106/Pasta codigo/cmake-build-debug/CMakeFiles/AED-2223-Project1.dir
-C:/Users/simao/OneDrive/Desktop/AED2223_G106/Pasta codigo/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/simao/OneDrive/Desktop/AED2223_G106/Pasta codigo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
