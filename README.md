@@ -22,4 +22,5 @@
 | [PFL](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=520329) | Prolog | VSCode | [Six Making](https://github.com/qsimaor/projects/tree/main/Projects/Six%20Making)| Using logic programming |
 | [PFL](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=520329) | Haskell | VSCode | In progress | Using functional programming |
 | [RC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=520330) | C | VSCode | [Data Link Protocol](https://github.com/qsimaor/projects/tree/main/Projects/Data%20Link%20Protocol) | Communication between two systems connected by a serial cable |
-| [LBAW](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=520328) | Laravel | PhpStorm | In progress | Collaborative Q&A website|
+| [RC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=520330) | C | VSCode | [Computer Network](https://github.com/qsimaor/projects/tree/main/Projects/Computer%20Network) | Configuration and use of a computer network |
+| [LBAW](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=520328) | Laravel | PhpStorm | [Collaborative Q&A](https://github.com/qsimaor/projects/tree/main/Projects/Collaborative%20Q%26A) | Collaborative Q&A website|
