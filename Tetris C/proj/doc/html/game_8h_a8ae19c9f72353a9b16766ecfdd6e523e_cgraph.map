@@ -1,0 +1,21 @@
+<map id="handle_game_over" name="handle_game_over">
+<area shape="rect" id="Node000001" title="Handles the game over state." alt="" coords="5,81,134,108"/>
+<area shape="rect" id="Node000002" href="$game_8c.html#a04d1b2517654ecfcfb0b99b7aad10a46" title="Draws the game screen." alt="" coords="202,56,251,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,82,186,73,187,78,134,87"/>
+<area shape="rect" id="Node000009" href="$video_8c.html#a2c402fef55ded43fe29137c5a2e0ee28" title="Swaps the buffer to display the contents." alt="" coords="182,107,271,133"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="134,102,167,108,166,113,134,108"/>
+<area shape="rect" id="Node000003" href="$video_8c.html#a66853ab57739c78bf08eac531e2edb10" title="Cleans the buffer by setting it to zero." alt="" coords="328,56,418,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="251,67,313,67,313,72,251,72"/>
+<area shape="rect" id="Node000006" href="$video_8c.html#acac59940e880980fe328945b1c9463e4" title="Draws a rectangle." alt="" coords="319,5,427,32"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="250,59,317,35,319,40,252,64"/>
+<area shape="rect" id="Node000004" href="$video_8c.html#a5d62ec4f87ce2a555ac1784bc44f243f" title="Calculates the size of the frame buffer." alt="" coords="475,56,623,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="419,67,459,67,459,72,419,72"/>
+<area shape="rect" id="Node000005" href="$video_8c.html#a446fe70b50ee1658fe05e15c0016a517" title=" " alt="" coords="827,31,939,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="623,61,812,47,812,52,623,66"/>
+<area shape="rect" id="Node000007" href="$video_8c.html#a5a4a85e95c113e0f9f6f5db7d1a08e8a" title="Draws a horizontal line." alt="" coords="508,5,590,32"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="428,16,492,16,492,21,428,21"/>
+<area shape="rect" id="Node000008" href="$video_8c.html#a4eb3c78cdbecea0d7a565fa16b9225f4" title="Sets the color of a pixel." alt="" coords="671,5,779,32"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="590,16,656,16,656,21,590,21"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="780,25,812,30,811,35,779,30"/>
+<area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="271,113,427,92,471,84,472,89,428,97,272,118"/>
+</map>

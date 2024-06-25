@@ -1,0 +1,104 @@
+\doxysection{src/main.c File Reference}
+\hypertarget{main_8c}{}\label{main_8c}\index{src/main.c@{src/main.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}video.\+h"{}}\newline
+{\ttfamily \#include "{}keyboard.\+h"{}}\newline
+{\ttfamily \#include $<$lcom/timer.\+h$>$}\newline
+{\ttfamily \#include "{}pictures.\+h"{}}\newline
+{\ttfamily \#include "{}mouse.\+h"{}}\newline
+{\ttfamily \#include "{}game.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{main_8c_af244d65e69677cf312af1950452ec256}{proj\+\_\+main\+\_\+loop}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a617a47c70795bcff659815ad0efd2266}{counter}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{main_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}
+\item 
+int \mbox{\hyperlink{main_8c_ad7b7359077f6690e77dea66d70abe213}{max\+\_\+x}}
+\item 
+int \mbox{\hyperlink{main_8c_a5f0d610eafd05463bc8771cfd8da1adc}{max\+\_\+y}}
+\item 
+struct packet \mbox{\hyperlink{main_8c_a26e83eca70c2b9169fbbb0eac7e32e32}{pp}}
+\item 
+int \mbox{\hyperlink{main_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}
+\item 
+int \mbox{\hyperlink{main_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8c_a0ddf1224851353fc92bfbff6f499fa97}\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8c_a0ddf1224851353fc92bfbff6f499fa97} 
+int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+\Hypertarget{main_8c_af244d65e69677cf312af1950452ec256}\index{main.c@{main.c}!proj\_main\_loop@{proj\_main\_loop}}
+\index{proj\_main\_loop@{proj\_main\_loop}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{proj\_main\_loop()}{proj\_main\_loop()}}
+{\footnotesize\ttfamily \label{main_8c_af244d65e69677cf312af1950452ec256} 
+int proj\+\_\+main\+\_\+loop (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_af244d65e69677cf312af1950452ec256_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8c_a617a47c70795bcff659815ad0efd2266}\index{main.c@{main.c}!counter@{counter}}
+\index{counter@{counter}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily \label{main_8c_a617a47c70795bcff659815ad0efd2266} 
+int counter\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{main_8c_ad7b7359077f6690e77dea66d70abe213}\index{main.c@{main.c}!max\_x@{max\_x}}
+\index{max\_x@{max\_x}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{max\_x}{max\_x}}
+{\footnotesize\ttfamily \label{main_8c_ad7b7359077f6690e77dea66d70abe213} 
+int max\+\_\+x\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{main_8c_a5f0d610eafd05463bc8771cfd8da1adc}\index{main.c@{main.c}!max\_y@{max\_y}}
+\index{max\_y@{max\_y}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{max\_y}{max\_y}}
+{\footnotesize\ttfamily \label{main_8c_a5f0d610eafd05463bc8771cfd8da1adc} 
+int max\+\_\+y}
+
+\Hypertarget{main_8c_a26e83eca70c2b9169fbbb0eac7e32e32}\index{main.c@{main.c}!pp@{pp}}
+\index{pp@{pp}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{pp}{pp}}
+{\footnotesize\ttfamily \label{main_8c_a26e83eca70c2b9169fbbb0eac7e32e32} 
+struct packet pp\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{main_8c_aa1de7a5557e9d96b83cf03f73c92163f}\index{main.c@{main.c}!scancode@{scancode}}
+\index{scancode@{scancode}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{scancode}{scancode}}
+{\footnotesize\ttfamily \label{main_8c_aa1de7a5557e9d96b83cf03f73c92163f} 
+uint8\+\_\+t scancode\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{main_8c_a6150e0515f7202e2fb518f7206ed97dc}\index{main.c@{main.c}!x@{x}}
+\index{x@{x}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{main_8c_a6150e0515f7202e2fb518f7206ed97dc} 
+int x\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{main_8c_a0a2f84ed7838f07779ae24c5a9086d33}\index{main.c@{main.c}!y@{y}}
+\index{y@{y}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{main_8c_a0a2f84ed7838f07779ae24c5a9086d33} 
+int y}
+

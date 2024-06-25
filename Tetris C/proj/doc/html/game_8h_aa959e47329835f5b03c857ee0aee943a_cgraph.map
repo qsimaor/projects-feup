@@ -1,0 +1,9 @@
+<map id="draw_word_in_rectangle" name="draw_word_in_rectangle">
+<area shape="rect" id="Node000001" title="Draws a word inside a rectangle." alt="" coords="5,5,165,32"/>
+<area shape="rect" id="Node000002" href="$video_8c.html#a489104f301358d3ff21d0572c187613a" title="Draws an XPM image." alt="" coords="213,5,293,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,16,197,16,197,21,165,21"/>
+<area shape="rect" id="Node000003" href="$video_8c.html#a4eb3c78cdbecea0d7a565fa16b9225f4" title="Sets the color of a pixel." alt="" coords="341,5,449,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="293,16,326,16,326,21,293,21"/>
+<area shape="rect" id="Node000004" href="$video_8c.html#a446fe70b50ee1658fe05e15c0016a517" title=" " alt="" coords="497,5,610,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="450,16,482,16,482,21,450,21"/>
+</map>

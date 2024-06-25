@@ -1,0 +1,5 @@
+<map id="move_piece" name="move_piece">
+<area shape="rect" id="Node000001" title="Moves the Tetris piece by the specified deltas." alt="" coords="5,5,95,32"/>
+<area shape="rect" id="Node000002" href="$game_8c.html#a0bbfaec3e0481738b086c8893388078d" title="Copies the Tetris piece to the screen." alt="" coords="143,5,294,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,16,127,16,127,21,95,21"/>
+</map>

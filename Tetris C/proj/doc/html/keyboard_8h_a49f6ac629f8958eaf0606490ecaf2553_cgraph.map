@@ -1,0 +1,11 @@
+<map id="escape_key" name="escape_key">
+<area shape="rect" id="Node000001" title="Waits for the ESC key to be pressed." alt="" coords="5,56,97,83"/>
+<area shape="rect" id="Node000002" href="$keyboard_8c.html#a2cd9ca9676c3bb32caf630687a1297af" title="Keyboard interrupt handler. Reads the scancode from the output buffer." alt="" coords="161,5,280,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,53,158,34,159,40,98,58"/>
+<area shape="rect" id="Node000004" href="$keyboard_8c.html#acf4fe6cea09b4953e286c1df9a61f2c8" title="Subscribes to keyboard interrupts." alt="" coords="152,56,289,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="97,67,136,67,136,72,97,72"/>
+<area shape="rect" id="Node000005" href="$keyboard_8c.html#ac5a55c875cfe613e7fc3dec67ab0dde8" title="Unsubscribes from keyboard interrupts." alt="" coords="145,107,296,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="98,80,159,99,158,104,96,85"/>
+<area shape="rect" id="Node000003" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="344,5,434,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="280,16,328,16,328,21,280,21"/>
+</map>

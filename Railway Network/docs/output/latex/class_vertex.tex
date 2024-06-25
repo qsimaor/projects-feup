@@ -1,0 +1,237 @@
+\hypertarget{class_vertex}{}\doxysection{Vertex Class Reference}
+\label{class_vertex}\index{Vertex@{Vertex}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vertex_a41373f7a4de7c2cd4b82a4756f743256}{Vertex}} (string \mbox{\hyperlink{class_vertex_ac7798941755cd11208af3fb26eb8bc14}{name}}, string \mbox{\hyperlink{class_vertex_a6a8145ba0478238a0b36a0bced2c9c19}{district}}, string \mbox{\hyperlink{class_vertex_a57ac7b1d83d08189d1d11a5c1500c494}{municipality}}, string \mbox{\hyperlink{class_vertex_a3480ab5a01217d53a4f2edfca1c9e4db}{township}}, string \mbox{\hyperlink{class_vertex_a5fe61753fdb6a7cb83aa9b05f7c63755}{line}})
+\item 
+\mbox{\hyperlink{class_vertex_a46f11cdf285d72237ce61b92d2587c45}{Vertex}} (string \mbox{\hyperlink{class_vertex_ac7798941755cd11208af3fb26eb8bc14}{name}})
+\item 
+string \mbox{\hyperlink{class_vertex_a03742e8eafee7a45c73408c0fc0290a7}{get\+Name}} () const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}} $\ast$ $>$ \mbox{\hyperlink{class_vertex_a9858f2aa388d2bfb49d9df8f4504b5a0}{get\+Adj}} () const
+\item 
+bool \mbox{\hyperlink{class_vertex_aa4bd82105b85ee53a917391f4811cd8a}{is\+Visited}} () const
+\item 
+\mbox{\Hypertarget{class_vertex_a126e306f0534b99cd97aa864fdb243d4}\label{class_vertex_a126e306f0534b99cd97aa864fdb243d4}} 
+bool {\bfseries is\+Processing} () const
+\item 
+\mbox{\Hypertarget{class_vertex_ad7348af9376d4b9ada5ceeca3bd1b2b7}\label{class_vertex_ad7348af9376d4b9ada5ceeca3bd1b2b7}} 
+unsigned int {\bfseries get\+Indegree} () const
+\item 
+\mbox{\Hypertarget{class_vertex_aa36ca926de23a6e7283be42e2930957c}\label{class_vertex_aa36ca926de23a6e7283be42e2930957c}} 
+double {\bfseries get\+Dist} () const
+\item 
+\mbox{\hyperlink{class_edge}{Edge}} $\ast$ \mbox{\hyperlink{class_vertex_a6e120e57da6af94892fae44e05868794}{get\+Path}} () const
+\item 
+string \mbox{\hyperlink{class_vertex_ac076da661107f67854fff107b1ab043b}{get\+Municipality}} () const
+\item 
+string \mbox{\hyperlink{class_vertex_a55c8487980faa50fba048fb6286e1b86}{get\+District}} () const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}} $\ast$ $>$ \mbox{\hyperlink{class_vertex_a84b20dae22321e5a729606885357b015}{get\+Incoming}} () const
+\item 
+\mbox{\Hypertarget{class_vertex_a42d9dfc02d2f1a36320c6324b552420b}\label{class_vertex_a42d9dfc02d2f1a36320c6324b552420b}} 
+void {\bfseries set\+Name} (string \mbox{\hyperlink{class_vertex_ac7798941755cd11208af3fb26eb8bc14}{name}})
+\item 
+void \mbox{\hyperlink{class_vertex_a15eeabbbb6d517af746ae137c6d5b595}{set\+Visited}} (bool \mbox{\hyperlink{class_vertex_aaef9f7de91b4b8f1752d391a1aae9c2e}{visited}})
+\item 
+\mbox{\Hypertarget{class_vertex_a1c93b166281b30db2edef03791748ace}\label{class_vertex_a1c93b166281b30db2edef03791748ace}} 
+void {\bfseries set\+Processsing} (bool processing)
+\item 
+\mbox{\Hypertarget{class_vertex_aeb605d2ba9296a5e40496a9e37557d03}\label{class_vertex_aeb605d2ba9296a5e40496a9e37557d03}} 
+void {\bfseries set\+Indegree} (unsigned int indegree)
+\item 
+\mbox{\Hypertarget{class_vertex_a6939bef79bfe5fe5bf77d9fd1bd70085}\label{class_vertex_a6939bef79bfe5fe5bf77d9fd1bd70085}} 
+void {\bfseries set\+Dist} (double dist)
+\item 
+void \mbox{\hyperlink{class_vertex_abe4bc30005eec65e775d0cd51f456460}{set\+Path}} (\mbox{\hyperlink{class_edge}{Edge}} $\ast$\mbox{\hyperlink{class_vertex_a4e83821f961f6eb63ad210260ba0e1e2}{path}})
+\item 
+\mbox{\hyperlink{class_edge}{Edge}} $\ast$ \mbox{\hyperlink{class_vertex_a2cd6d29a2eb3584de91252d8053afc89}{add\+Edge}} (\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$dest, double w, string service)
+\item 
+\mbox{\Hypertarget{class_vertex_aec18403e08a7a297835c66867a40c97f}\label{class_vertex_aec18403e08a7a297835c66867a40c97f}} 
+bool {\bfseries remove\+Edge} (string dest\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_vertex_ac7798941755cd11208af3fb26eb8bc14}\label{class_vertex_ac7798941755cd11208af3fb26eb8bc14}} 
+string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em String that represents the \mbox{\hyperlink{class_vertex}{Vertex}} and stores the name of the train station. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vertex_a6a8145ba0478238a0b36a0bced2c9c19}\label{class_vertex_a6a8145ba0478238a0b36a0bced2c9c19}} 
+string {\bfseries district}
+\begin{DoxyCompactList}\small\item\em String that stores the name of the district of the train station. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vertex_a57ac7b1d83d08189d1d11a5c1500c494}\label{class_vertex_a57ac7b1d83d08189d1d11a5c1500c494}} 
+string {\bfseries municipality}
+\begin{DoxyCompactList}\small\item\em String that stores the name of the municipality of the train station. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vertex_a3480ab5a01217d53a4f2edfca1c9e4db}\label{class_vertex_a3480ab5a01217d53a4f2edfca1c9e4db}} 
+string {\bfseries township}
+\begin{DoxyCompactList}\small\item\em String that stores the name of the township of the train station. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vertex_a5fe61753fdb6a7cb83aa9b05f7c63755}\label{class_vertex_a5fe61753fdb6a7cb83aa9b05f7c63755}} 
+string {\bfseries line}
+\begin{DoxyCompactList}\small\item\em String that stores the name of the line that the train station is from. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vertex_a0be7a8d322f99d4812261af91c3e2178}\label{class_vertex_a0be7a8d322f99d4812261af91c3e2178}} 
+std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}} $\ast$ $>$ {\bfseries adj}
+\begin{DoxyCompactList}\small\item\em Vector of \mbox{\hyperlink{class_edge}{Edge}}\textquotesingle{}s that connect from this \mbox{\hyperlink{class_vertex}{Vertex}} to another one (outgoing edges). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vertex_aaef9f7de91b4b8f1752d391a1aae9c2e}\label{class_vertex_aaef9f7de91b4b8f1752d391a1aae9c2e}} 
+bool {\bfseries visited} = false
+\begin{DoxyCompactList}\small\item\em Boolean (true/false) whether if this \mbox{\hyperlink{class_vertex}{Vertex}} was visited or not. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vertex_a305dc8fcad6e4c7ef2491409ca7ddaa4}\label{class_vertex_a305dc8fcad6e4c7ef2491409ca7ddaa4}} 
+bool {\bfseries processing} = false
+\item 
+\mbox{\Hypertarget{class_vertex_a94ae99aae9b1a426feda5ecda70c598b}\label{class_vertex_a94ae99aae9b1a426feda5ecda70c598b}} 
+unsigned int {\bfseries indegree}
+\item 
+\mbox{\Hypertarget{class_vertex_a11d98611f5101fe7f46785d8b9c53f44}\label{class_vertex_a11d98611f5101fe7f46785d8b9c53f44}} 
+double {\bfseries dist} = 0
+\item 
+\mbox{\Hypertarget{class_vertex_a4e83821f961f6eb63ad210260ba0e1e2}\label{class_vertex_a4e83821f961f6eb63ad210260ba0e1e2}} 
+\mbox{\hyperlink{class_edge}{Edge}} $\ast$ {\bfseries path} = nullptr
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_edge}{Edge}} that corresponds to the \mbox{\hyperlink{class_vertex}{Vertex}}\textquotesingle{}s path. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vertex_a2d41654d7aee77d99edacca6a923f4ee}\label{class_vertex_a2d41654d7aee77d99edacca6a923f4ee}} 
+std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}} $\ast$ $>$ {\bfseries incoming}
+\begin{DoxyCompactList}\small\item\em Vector that stores all the incoming \mbox{\hyperlink{class_edge}{Edge}}\textquotesingle{}s of this \mbox{\hyperlink{class_vertex}{Vertex}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_vertex_a41373f7a4de7c2cd4b82a4756f743256}\label{class_vertex_a41373f7a4de7c2cd4b82a4756f743256}} 
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{Vertex()}{Vertex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Vertex\+::\+Vertex (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{district,  }\item[{string}]{municipality,  }\item[{string}]{township,  }\item[{string}]{line }\end{DoxyParamCaption})}
+
+Constructor of the \mbox{\hyperlink{class_vertex}{Vertex}} class storing all the information about a train station. Time Complexity\+: O(1). 
+\begin{DoxyParams}{Parameters}
+{\em name} & String that represents the \mbox{\hyperlink{class_vertex}{Vertex}} and stores the name of the train station. \\
+\hline
+{\em district} & String that stores the name of the district of the train station. \\
+\hline
+{\em municipality} & String that stores the name of the municipality of the train station. \\
+\hline
+{\em township} & String that stores the name of the township of the train station. \\
+\hline
+{\em line} & String that stores the name of the line that the train station is from. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vertex_a46f11cdf285d72237ce61b92d2587c45}\label{class_vertex_a46f11cdf285d72237ce61b92d2587c45}} 
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{Vertex()}{Vertex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Vertex\+::\+Vertex (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+Secondary constructor of the \mbox{\hyperlink{class_vertex}{Vertex}} class for testing/calculating purposes. Time Complexity\+: O(1). 
+\begin{DoxyParams}{Parameters}
+{\em name} & String that represents the \mbox{\hyperlink{class_vertex}{Vertex}} and stores the name of the train station. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_vertex_a2cd6d29a2eb3584de91252d8053afc89}\label{class_vertex_a2cd6d29a2eb3584de91252d8053afc89}} 
+\index{Vertex@{Vertex}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{addEdge()}{addEdge()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{Edge}} $\ast$ Vertex\+::add\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{dest,  }\item[{double}]{w,  }\item[{string}]{service }\end{DoxyParamCaption})}
+
+Creates and adds a edge with given parameters. Time Complexity\+: O(1). 
+\begin{DoxyParams}{Parameters}
+{\em dest} & String that represents a \mbox{\hyperlink{class_vertex}{Vertex}} and stores the name of the target train station. \\
+\hline
+{\em w} & Double that stores the capacity of this connection between two train stations. \\
+\hline
+{\em service} & String that stores the type of service that happens between those stations (STANDARD or ALFA PENDULAR). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_edge}{Edge}} that was created by the given parameters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vertex_a9858f2aa388d2bfb49d9df8f4504b5a0}\label{class_vertex_a9858f2aa388d2bfb49d9df8f4504b5a0}} 
+\index{Vertex@{Vertex}!getAdj@{getAdj}}
+\index{getAdj@{getAdj}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{getAdj()}{getAdj()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}} $\ast$ $>$ Vertex\+::get\+Adj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets all the connections between this \mbox{\hyperlink{class_vertex}{Vertex}} (train station) and others. Time Complexity\+: O(1). \begin{DoxyReturn}{Returns}
+Vector of \mbox{\hyperlink{class_edge}{Edge}}\textquotesingle{}s that connect from this \mbox{\hyperlink{class_vertex}{Vertex}} to another one. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vertex_a55c8487980faa50fba048fb6286e1b86}\label{class_vertex_a55c8487980faa50fba048fb6286e1b86}} 
+\index{Vertex@{Vertex}!getDistrict@{getDistrict}}
+\index{getDistrict@{getDistrict}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{getDistrict()}{getDistrict()}}
+{\footnotesize\ttfamily string Vertex\+::get\+District (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets this \mbox{\hyperlink{class_vertex}{Vertex}}\textquotesingle{}s (train station) district. Time Complexity\+: O(1). \begin{DoxyReturn}{Returns}
+String that stores the name of the district of the train station. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vertex_a84b20dae22321e5a729606885357b015}\label{class_vertex_a84b20dae22321e5a729606885357b015}} 
+\index{Vertex@{Vertex}!getIncoming@{getIncoming}}
+\index{getIncoming@{getIncoming}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{getIncoming()}{getIncoming()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}} $\ast$ $>$ Vertex\+::get\+Incoming (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets this \mbox{\hyperlink{class_vertex}{Vertex}}\textquotesingle{}s (train station) incoming connections (\mbox{\hyperlink{class_edge}{Edge}}\textquotesingle{}s). Time Complexity\+: O(1). \begin{DoxyReturn}{Returns}
+Vector that stores all the incoming \mbox{\hyperlink{class_edge}{Edge}}\textquotesingle{}s of this \mbox{\hyperlink{class_vertex}{Vertex}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vertex_ac076da661107f67854fff107b1ab043b}\label{class_vertex_ac076da661107f67854fff107b1ab043b}} 
+\index{Vertex@{Vertex}!getMunicipality@{getMunicipality}}
+\index{getMunicipality@{getMunicipality}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{getMunicipality()}{getMunicipality()}}
+{\footnotesize\ttfamily string Vertex\+::get\+Municipality (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets this \mbox{\hyperlink{class_vertex}{Vertex}}\textquotesingle{}s (train station) municipality. Time Complexity\+: O(1). \begin{DoxyReturn}{Returns}
+String that stores the name of the municipality of the train station. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vertex_a03742e8eafee7a45c73408c0fc0290a7}\label{class_vertex_a03742e8eafee7a45c73408c0fc0290a7}} 
+\index{Vertex@{Vertex}!getName@{getName}}
+\index{getName@{getName}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Vertex\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the name of a \mbox{\hyperlink{class_vertex}{Vertex}} (train station). Time Complexity\+: O(1). \begin{DoxyReturn}{Returns}
+String that represents the \mbox{\hyperlink{class_vertex}{Vertex}} and stores the name of the train station. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vertex_a6e120e57da6af94892fae44e05868794}\label{class_vertex_a6e120e57da6af94892fae44e05868794}} 
+\index{Vertex@{Vertex}!getPath@{getPath}}
+\index{getPath@{getPath}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{Edge}} $\ast$ Vertex\+::get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets this \mbox{\hyperlink{class_vertex}{Vertex}}\textquotesingle{}s path. Time Complexity\+: O(1). \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_edge}{Edge}} that corresponds to the \mbox{\hyperlink{class_vertex}{Vertex}}\textquotesingle{}s path. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vertex_aa4bd82105b85ee53a917391f4811cd8a}\label{class_vertex_aa4bd82105b85ee53a917391f4811cd8a}} 
+\index{Vertex@{Vertex}!isVisited@{isVisited}}
+\index{isVisited@{isVisited}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{isVisited()}{isVisited()}}
+{\footnotesize\ttfamily bool Vertex\+::is\+Visited (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Checks if this \mbox{\hyperlink{class_vertex}{Vertex}} was visited. Time Complexity\+: O(1). \begin{DoxyReturn}{Returns}
+Boolean (true/false) whether if it was visited or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vertex_abe4bc30005eec65e775d0cd51f456460}\label{class_vertex_abe4bc30005eec65e775d0cd51f456460}} 
+\index{Vertex@{Vertex}!setPath@{setPath}}
+\index{setPath@{setPath}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{setPath()}{setPath()}}
+{\footnotesize\ttfamily void Vertex\+::set\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{Edge}} $\ast$}]{path }\end{DoxyParamCaption})}
+
+Set this \mbox{\hyperlink{class_vertex}{Vertex}}\textquotesingle{}s path. Time Complexity\+: O(1). 
+\begin{DoxyParams}{Parameters}
+{\em path} & \mbox{\hyperlink{class_edge}{Edge}} that corresponds to the \mbox{\hyperlink{class_vertex}{Vertex}}\textquotesingle{}s path. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vertex_a15eeabbbb6d517af746ae137c6d5b595}\label{class_vertex_a15eeabbbb6d517af746ae137c6d5b595}} 
+\index{Vertex@{Vertex}!setVisited@{setVisited}}
+\index{setVisited@{setVisited}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{setVisited()}{setVisited()}}
+{\footnotesize\ttfamily void Vertex\+::set\+Visited (\begin{DoxyParamCaption}\item[{bool}]{visited }\end{DoxyParamCaption})}
+
+Set if the \mbox{\hyperlink{class_vertex}{Vertex}} was visited or not. Time Complexity\+: O(1). 
+\begin{DoxyParams}{Parameters}
+{\em visited} & Boolean (true/false) whether if it was visited or not. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/phill/\+Desktop/\+FEUP/2\+\_\+2\+S/\+DA/\+DA\+\_\+\+Projeto1/code/data\+\_\+structures/Vertex\+Edge.\+h\item 
+C\+:/\+Users/phill/\+Desktop/\+FEUP/2\+\_\+2\+S/\+DA/\+DA\+\_\+\+Projeto1/code/data\+\_\+structures/Vertex\+Edge.\+cpp\end{DoxyCompactItemize}

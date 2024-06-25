@@ -1,0 +1,5 @@
+<map id="check_and_clear_full_lines" name="check_and_clear_full_lines">
+<area shape="rect" id="Node000001" title="Checks and clears full lines on the screen." alt="" coords="5,5,148,48"/>
+<area shape="rect" id="Node000002" href="$game_8c.html#ad3c94caed8f855de91e9a9eb851d7752" title="Checks if a line on the screen is full." alt="" coords="196,13,277,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,24,180,24,180,29,148,29"/>
+</map>

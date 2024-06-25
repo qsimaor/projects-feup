@@ -1,0 +1,7 @@
+<map id="draw_hline" name="draw_hline">
+<area shape="rect" id="Node000001" title="Draws a horizontal line." alt="" coords="5,5,88,32"/>
+<area shape="rect" id="Node000002" href="$video_8c.html#a4eb3c78cdbecea0d7a565fa16b9225f4" title="Sets the color of a pixel." alt="" coords="136,5,244,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,16,120,16,120,21,88,21"/>
+<area shape="rect" id="Node000003" href="$video_8c.html#a446fe70b50ee1658fe05e15c0016a517" title=" " alt="" coords="292,5,404,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="244,16,277,16,277,21,244,21"/>
+</map>

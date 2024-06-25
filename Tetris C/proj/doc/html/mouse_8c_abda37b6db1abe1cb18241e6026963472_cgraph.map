@@ -1,0 +1,12 @@
+<map id="change_data_report_mode" name="change_data_report_mode">
+<area shape="rect" id="Node000001" title="Changes the data report mode of the mouse." alt="" coords="5,56,180,83"/>
+<area shape="rect" id="Node000002" href="$mouse_8c.html#a9b2558009e1b213a1c8eefba7ccf0c1d" title="Checks if the input buffer is full." alt="" coords="228,5,355,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,53,221,34,222,39,149,58"/>
+<area shape="rect" id="Node000004" href="$mouse_8c.html#a246fcf5b952699d8927791702359d9f8" title="Reads data from the output buffer." alt="" coords="249,56,334,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="180,67,233,67,233,72,180,72"/>
+<area shape="rect" id="Node000005" href="$mouse_8c.html#a68523c70ba9365321b7b8a24ca8a8587" title="Sends a command to the mouse." alt="" coords="235,107,348,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="149,81,222,100,221,105,147,86"/>
+<area shape="rect" id="Node000003" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="403,31,493,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="356,26,388,32,387,37,355,32"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="334,60,388,51,388,56,334,65"/>
+</map>
