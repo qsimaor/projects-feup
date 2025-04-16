@@ -1,0 +1,147 @@
+:root {
+    --uo-color: #8c2d19;
+    --uo-color-dark: #66261b;
+    --uo-color-light: #c37766;
+}
+
+.upper-nav {
+    background-color: var(--uo-color);
+}
+
+.upper-nav .upper-nav-right .icons {
+    color: black;
+}
+
+.upper-nav .upper-nav-right {
+    background-color: var(--uo-color);
+}
+
+.hp-uporto .hp-slider-wrapper .hp-slider .slider-content a {
+    color: #ffffff !important;
+    background-color: var(--uo-color) !important;
+}
+
+footer {
+    min-height: 37px;
+    background-color: var(--uo-color-dark);
+}
+
+.hp-newsletter input {
+    border-bottom: 3px solid var(--uo-color) !important;
+}
+
+.hp-newsletter input:focus {
+    box-shadow: none;
+}
+
+.hp-uporto .hp-newsletter button {
+    background-color: var(--uo-color);
+}
+
+.hp-uporto .prev-next-rows button:hover {
+    background-color: var(--uo-color);
+}
+
+.logo-up {
+    /*background-image: url("fcup.png");*/
+    /*width: 175px;*/
+    /*height: 70px;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hp-uporto .highlights .card a .highlight-bar, .hp-uporto .one-highlights .card a .highlight-bar {
+    border-bottom: 10px solid var(--uo-color);
+}
+
+.banner-box .banner-box-txt-gold {
+    background-color: var(--uo-color-light);
+}
+
+a .btn-up:hover {
+    border: 2px solid var(--uo-color-dark);
+    color: var(--uo-color-dark);
+}
+
+.collapsable-list div.tabela-b.t-collapse .col-4 {
+    color: var(--uo-color-dark);
+}
+
+.cta-button .btn-gold:hover {
+  color: var(--uo-color);
+}
+
+.cta-button .btn-gold {
+  background-color: var(--uo-color);
+  border: 2px solid var(--uo-color);
+}
+
+.banner-box .banner-box-txt-horizontal .btn-gold:hover {
+  color: var(--uo-color);
+}
+
+.banner-box .banner-box-txt-horizontal .btn-gold {
+  background-color: var(--uo-color);
+  border: 2px solid var(--uo-color);
+}
+
+/*.detail-sidebar .card .card-header.active {*/
+/*  background-color: var(--uo-color-light);*/
+/*}*/
+
+/*.detail-sidebar .card .card-header:hover {*/
+/*  background-color: var(--uo-color-light);*/
+/*}*/
+
+/*.detail-sidebar .card .children-items li {*/
+/*  background-color: var(--uo-color-light);*/
+/*}*/
+
+.h-two-column-text h2 {
+  color: var(--uo-color-dark);
+}
+
+.nav-wrapper .navbar-nav li:hover {
+    border-bottom: 3px solid var(--uo-color);
+}
+
+.nav-wrapper .navbar-nav .active-underline {
+    border-bottom: 3px solid var(--uo-color);
+}
+
+.hp-uporto .hp-newsletter button:hover {
+  background-color: var(--uo-color-dark);
+}
+
+.hp-uporto p.ver-mais:hover {
+    background-color: var(--uo-color);
+}
+
+.hp-uporto .slider-1 .slider-1-other .sep-destaque {
+    border-top: 7px solid var(--uo-color);
+}
+
+.hp-uporto .slider-1 .slider-1-info button, .hp-uporto .slider .slider-1-info button {
+    background-color: var(--uo-color);
+}
+
+/* Específica à UO - Top-Nav-Header-Right */
+
+.upper-nav .lang-up {
+    color: white;
+    background-color: var(--uo-color);
+}
+
+.upper-nav .lang-up .text-muted {
+    color: white !important;
+}
+
+.upper-nav .upper-nav-left {
+    color: white;
+    background-color: var(--uo-color);
+}
+
+.upper-nav .upper-nav-left .ico.user svg {
+  fill: white;
+}
+

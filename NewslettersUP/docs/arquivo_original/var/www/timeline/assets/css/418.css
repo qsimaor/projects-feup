@@ -1,0 +1,32 @@
+body {
+	font-size: 24px;
+	color: #809b3c;
+    background-color: #000000;
+    
+
+}
+
+h1 {
+	font-size: 64px;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+.white {
+	color: #FFFFFF;
+}
+
+.key-style { margin-left: -.2em; color: #00aeef; margin-top:-3px;}
+.envelope-style { color: #e6eae1; margin-top:-3px;}
+
+a, a:hover, a:visited {
+	color: #809b3c;
+}
+
+a:hover {
+	text-decoration: underline;
+}

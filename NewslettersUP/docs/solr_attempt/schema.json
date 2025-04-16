@@ -1,0 +1,17 @@
+{
+    "schema": {
+      "name": "newsletters",
+      "version": 1.6,
+      "fields": [
+        {"name": "id", "type": "string", "indexed": true, "stored": true},
+        {"name": "university", "type": "string", "indexed": true, "stored": true},
+        {"name": "tag", "type": "string", "indexed": true, "stored": true},
+        {"name": "date", "type": "string", "indexed": true, "stored": true},
+        {"name": "title", "type": "text_general", "indexed": true, "stored": true},
+        {"name": "preview_link", "type": "string", "indexed": false, "stored": true},
+        {"name": "text", "type": "text_general", "indexed": true, "stored": true},
+        {"name": "html", "type": "text_general", "indexed": true, "stored": true}
+      ]
+    }
+  }
+  

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for i in $(ls /var/www/data/); do
+	if [ -f "/var/www/data/${i}/docroot/app/config/local.php" ]; then
+		echo ${i}
+	fi
+done

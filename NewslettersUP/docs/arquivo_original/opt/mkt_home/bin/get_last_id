@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+BASE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+JSONS="/var/www/html/timeline/jsons/${1}"
+
+if [ ! -d "${JSONS}" ]; then
+	echo "JSON's directory not available. Exiting."
+	exit
+fi
+
+cd "${JSONS}"
+ls|grep -o '[0-9]\+'|sort -n|tail -1
+
+#-----------------------------------------------------------------------
+# References:
+#
+# [] http://linux.about.com/od/Bash_Scripting_Solutions/a/How-To-Pass-Arguments-To-A-Bash-Script.htm
+# [] uuid-runtime - runtime components for the Universally Unique ID library, /usr/bin/uuidgen
+# [] http://superuser.com/questions/493640/how-to-retry-connections-with-wget
+# [] http://mywiki.wooledge.org/BashGuide/Practices
+# [] http://www.computerworld.com/article/2694433/unix-good-coding-practices-for-bash.html
+# [] http://kvz.io/blog/2013/11/21/bash-best-practices/
+# []
+

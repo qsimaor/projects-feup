@@ -1,0 +1,16 @@
+body {
+  right: 0;
+}
+
+.secondary-zeynep-opened body {
+  overflow: hidden;
+}
+
+.secondary-zeynep.right {
+  left: auto;
+  right: 0;
+}
+
+.secondary-zeynep.right:not(.opened) {
+  transform: translateX(100%);
+}

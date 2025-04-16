@@ -1,0 +1,275 @@
+{
+        "alumni": [
+                {
+			"publication": "newsletter",
+                        "primary": "#87754E",
+                        "secondary": "#000",
+                        "frame": "#b31620",
+                        "banner": "#b31620",
+			"buttons": "#b31620",
+			"uplogo": "white"
+                }
+        ],
+        "cultura": [
+                {
+                        "publication": "newsletter",
+			"primary": "#87754E",
+                        "secondary": "#000",
+			"frame": "#fd0019",
+			"banner": "#fd0019",
+			"buttons": "#fd0019",
+                        "uplogo": "white"
+                }
+        ],
+        "faup": [
+                {	
+			"publication": "newsletter",
+                        "primary": "#fff",
+                        "secondary": "#fff",
+			"frame": "#000",
+			"banner": "#e9e9e9",
+			"buttons": "#000",
+			"frame": "#000",
+			"uplogo": "black"
+                },
+
+                {
+                        "publication": "emailing",
+                        "primary": "#fff",
+                        "secondary": "#fff",
+                        "frame": "#000",
+                        "banner": "#e9e9e9",
+                        "buttons": "#000",
+                        "frame": "#000",
+                        "uplogo": "black"
+                }
+
+        ],
+        "fcup": [
+                {
+                        "publication": "noticias-fcup",
+			"primary": "#7dbae6",
+                        "secondary": "#7dbae6",
+			"frame": "#000",
+			"banner": "#0ca2be",
+			"frame": "#0ca2be",
+			"buttons": "#0ca2be",
+                        "uplogo": "white"
+	}
+        ],
+        "fep": [
+                {
+                        "publication": "newsletter",
+			"primary": "#ef3340",
+                        "secondary": "#fff",
+			"frame": "#ef3340",
+			"banner": "#ef3340",
+			"buttons": "#ef3340",
+                        "uplogo": "white"
+                }
+        ],
+        "fcnaup": [
+                {
+                        "publication": "newsletter",
+                        "primary": "#D29F13",
+                        "secondary": "#D29F13",
+                        "frame": "#D29F13",
+                        "banner": "#D29F13",
+                        "buttons": "#D29F13",
+                        "uplogo": "black"
+                }
+        ],
+        "feup": [
+                {
+                        "publication": "feupworld",
+			"primary": "#97230c",
+                        "secondary": "#97230c",
+			"frame": "#fff",
+			"banner": "#011f3a",
+			"buttons": "#011f3a",
+                        "uplogo": "white"
+                },
+                {
+                        "publication": "feupworld2023",
+                        "primary": "#97230c",
+                        "secondary": "#97230c",
+                        "frame": "#fff",
+                        "banner": "#011f3a",
+                        "buttons": "#011f3a",
+                        "uplogo": "white"
+                },
+                {
+                        "publication": "feup-dna",
+                        "primary": "#fff",
+                        "secondary": "#fff",
+                        "frame": "#fff",
+                        "banner": "#216d80",
+                        "buttons": "#216d80",
+                        "uplogo": "white"
+                },
+                {
+                        "publication": "highlights",
+			"primary": "#fff",
+                        "secondary": "#fff",
+                        "frame": "#fff",
+                        "banner": "#216d80",
+			"buttons": "#216d80",
+                        "uplogo": "white"
+                },
+                {
+                        "publication": "communityofchange",
+                        "primary": "#97230c",
+                        "secondary": "#97230c",
+                        "frame": "#fff",
+                        "banner": "#19235E",
+                        "buttons": "#19235E",
+                        "uplogo": "white"
+                }
+        ],
+        "fpce": [
+                {
+                        "publication": "newsletter-fpceup",
+			"primary": "#ff5c00",
+                        "secondary": "#ff5c00",
+                        "frame": "#ff5c00",
+                        "banner": "#fff",
+			"buttons": "#ff5c00",
+			"uplogo": "black"
+                },
+                {
+                        "publication": "newsletter-sec",
+                        "primary": "#ff5c00",
+                        "secondary": "#ff5c00",
+                        "frame": "#ff5c00",
+                        "banner": "#ff5c00",
+                        "buttons": "#ff5c00",
+                        "uplogo": "white"
+                },
+                {
+                        "publication": "newsletter-cpup",
+                        "primary": "#ff5c00",
+                        "secondary": "#ff5c00",
+                        "frame": "#ff5c00",
+                        "banner": "#ff5c00",
+                        "buttons": "#ff5c00",
+                        "uplogo": "white"
+                }
+        ],
+        "icbas": [
+                {
+                        "publication": "newsletter",
+			"primary": "#fdd117",
+                        "secondary": "#78c0e2",
+                        "frame": "#fdd117",
+			"banner": "#fff",
+                        "buttons": "#78c0e2",
+                        "uplogo": "black"
+                }
+        ],
+        "ispup": [
+                {
+                        "publication": "newsletter",
+			"primary": "#e92e39",
+                        "secondary": "#0e2d5a",
+                        "frame": "#0e2d5a",
+                        "buttons": "#e92e39",
+			"banner": "#faf7f6",
+			"uplogo": "black"
+                }
+        ],
+        "reitoria": [
+                {
+                        "publication": "sip",
+                        "primary": "#87754E",
+                        "secondary": "#87754E",
+                        "frame": "#daa534",
+                        "buttons": "#115e9a",
+                        "banner": "#fff",
+                        "uplogo": "black"
+                }
+        ],
+        "sipreitoria": [
+                {
+                        "publication": "timeline",
+                        "primary": "#87754E",
+                        "secondary": "#000",
+                        "frame": "#d534",
+                        "buttons": "#115e9a",
+                        "banner": "#fff",
+                        "uplogo": "black"
+                }
+        ],
+        "fmup": [
+                {
+                        "publication": "newsletter-fmup",
+                        "primary": "#fedc35",
+                        "secondary": "#fedc35",
+                        "frame": "#fedc35",
+                        "buttons": "#fedc35",
+                        "banner": "#fff",
+                        "uplogo": "black"
+                }
+        ],
+        "fmdup": [
+                {
+                        "publication": "newsletter",
+                        "primary": "#fece0a",
+                        "secondary": "#fc4408",
+                        "frame": "#fc4408",
+                        "buttons": "#fece0a",
+                        "banner": "#fff",
+                        "uplogo": "black"
+                }
+        ],
+       "updigital": [
+                {
+                        "publication": "newsletter",
+                        "primary": "#107699",
+                        "secondary": "#107699",
+                        "frame": "#107699",
+                        "buttons": "#107699",
+                        "banner": "#107699",
+                        "uplogo": "white"
+                }
+        ],
+        "flup": [
+                {
+                        "publication": "uec-newsletter",
+                        "primary": "#0019A8",
+                        "secondary": "#0019A8",
+                        "frame": "#38761D",
+                        "buttons": "#38761D",
+                        "banner": "#38761D",
+                        "uplogo": "white"
+                },
+                {
+                        "publication": "uec-formacao-professores",
+                        "primary": "#0019A8",
+                        "secondary": "#0019A8",
+                        "frame": "#38761D",
+                        "buttons": "#38761D",
+                        "banner": "#38761D",
+                        "uplogo": "white"
+                },
+                {
+                        "publication": "newsletter-flup",
+                        "primary": "#0019A8",
+                        "secondary": "#0019A8",
+                        "frame": "#0019A8",
+                        "buttons": "#0019A8",
+                        "banner": "#0019A8",
+                        "uplogo": "white"
+                },
+                {
+                        "publication": "esta-semana-na-flup",
+                        "primary": "#0019A8",
+                        "secondary": "#0019A8",
+                        "frame": "#0019a8",
+                        "buttons": "#0019a8",
+                        "banner": "#0019a8",
+                        "uplogo": "white"
+                }
+        ]
+
+
+}

@@ -1,0 +1,4 @@
+.DS_Store
+*/.DS_Store 
+/src/data_pipeline/newsletters/*
+/src/data_pipeline/mkt.up.pt/*

@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arquivo U. Porto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <div id="page-container" class="d-flex flex-column min-vh-100">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top w-100">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/UPORTO_positivo_fundotransparente.png" alt="U.Porto" height="30">
+                    <p class="d-inline d-none d-lg-inline">Arquivo</p>
+                </a>
+
+                <!-- Search form -->
+                <form class="d-flex my-2 my-lg-0 mx-auto w-50">
+                    <input class="form-control me-2" type="search" placeholder="Digite os termos de pesquisa..." aria-label="Search" id="searchTerms">
+                    <button class="btn btn-primary btn-outline-black d-none d-lg-inline" type="button" id="searchButton">Pesquisar</button>
+                </form>
+
+                <!-- Filter button -->
+                <button id="filterButton" class="btn btn-primary ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#filterBox" aria-expanded="false" aria-controls="filterBox">Filtros</button>
+
+                <!-- Dropdown menu -->
+                <div class="dropdown ms-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" alt="Menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="html/accessibility.html">Declaração de Acessibilidade</a></li>
+                        <li><a class="dropdown-item" href="html/policy.html">Política de Privacidade</a></li>
+                        <li><a class="dropdown-item" href="html/about.html">Sobre</a></li>
+                        <li><a class="dropdown-item" href="html/conditions.html">Termos e Condições</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main content -->
+        <div id="content-wrap" class="flex-grow-1">
+            <!-- Filters card (hidden by default) -->
+            <div class="container mt-5 pt-3">
+                <div class="collapse" id="filterBox">
+                    <div class="card card-filters mb-3 mx-auto" style="width: 70%;">
+                        <div class="card-header">Filtros</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Entidades</h5>
+                            <div class="row">
+
+                                <!-- Filter checkboxes -->
+                                <div class="col-md-3 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="alumni" id="alumni">
+                                        <label class="form-check-label" for="alumni">alumni</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="cultura" id="cultura">
+                                        <label class="form-check-label" for="cultura">cultura</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="faup" id="faup">
+                                        <label class="form-check-label" for="faup">faup</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="fcnaup" id="fcnaup">
+                                        <label class="form-check-label" for="fcnaup">fcnaup</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="fcup" id="fcup">
+                                        <label class="form-check-label" for="fcup">fcup</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="fep" id="fep">
+                                        <label class="form-check-label" for="fep">fep</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="feup" id="feup">
+                                        <label class="form-check-label" for="feup">feup</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="flup" id="flup">
+                                        <label class="form-check-label" for="flup">flup</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="fmdup" id="fmdup">
+                                        <label class="form-check-label" for="fmdup">fmdup</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="fmup" id="fmup">
+                                        <label class="form-check-label" for="fmup">fmup</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="fpce" id="fpce">
+                                        <label class="form-check-label" for="fpce">fpce</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="icbas" id="icbas">
+                                        <label class="form-check-label" for="icbas">icbas</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="ispup" id="ispup">
+                                        <label class="form-check-label" for="ispup">ispup</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="reitoria" id="reitoria">
+                                        <label class="form-check-label" for="reitoria">reitoria</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="sipreitoria" id="sipreitoria">
+                                        <label class="form-check-label" for="sipreitoria">sipreitoria</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="updigital" id="updigital">
+                                        <label class="form-check-label" for="updigital">updigital</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Date filters -->
+                            <h5 class="card-title mt-3">Data</h5>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="startDate" class="form-label">Data Inicial</label>
+                                    <input type="date" class="form-control" id="startDate" name="startDate">
+                                </div>
+                                <div class="col">
+                                    <label for="endDate" class="form-label">Data Final</label>
+                                    <input type="date" class="form-control" id="endDate" name="endDate">
+                                </div>
+                            </div>
+
+                            <!-- Type filter -->
+                            <h5 class="card-title mt-3">Tipo</h5>
+                            <select class="form-select" aria-label="Tipo select" id="typeSelect">
+                                <option selected value="">Nenhum</option>
+                                <option>newsletter-alumni</option>
+                                <option>newsletter-cultura</option>
+                                <option>emailing</option>
+                                <option>newsletter-faup</option>
+                                <option>newsletter-fcnaup</option>
+                                <option>noticias-fcup</option>
+                                <option>newsletter-fep</option>
+                                <option>communityofchange</option>
+                                <option>feup-dna</option>
+                                <option>feupworld</option>
+                                <option>feupworld2023</option>
+                                <option>highlights</option>
+                                <option>esta-semana-na-flup</option>
+                                <option>newsletter-flup</option>
+                                <option>uec-formacao-professores</option>
+                                <option>uec-newsletter</option>
+                                <option>newsletter-fmdup</option>
+                                <option>newsletter-fmup</option>
+                                <option>newsletter-fpceup</option>
+                            </select>
+                            
+                            <!-- Apply button -->
+                            <div class="d-grid gap-2 mt-3">
+                                <button class="btn btn-primary" type="button" id="applyButton">Aplicar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Cards -->
+                <div class="row mt-4" id="content-cards">
+                    <!-- Cards will be added here -->
+                </div>
+                <div id="scroll-anchor" class="mt-4"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer bg-secondary py-3">
+            <div class="container-fluid text-center">
+                <p class="mb-0">©2024 UPDigital</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const contentCards = document.getElementById('content-cards');
+        const applyButton = document.getElementById('applyButton');
+        const searchButton = document.getElementById('searchButton');
+        const filterButton = document.getElementById('filterButton');
+        const searchTerms = document.getElementById('searchTerms');
+        const scrollAnchor = document.getElementById('scroll-anchor');
+        const filterBox = new bootstrap.Collapse(document.getElementById('filterBox'), {
+            toggle: false
+        });
+
+        let currentPage = 1;
+        const pageSize = 12;
+        let currentQuery = '';
+
+        // Function to create a card
+        function createCard(title, date, tags, link, university) {
+            const card = document.createElement('div');
+            card.className = 'col-12 col-sm-6 col-md-4 col-lg-3 mb-4'; // Ajuste classes para design responsivo
+
+            const cardBody = document.createElement('div');
+            cardBody.className = 'card h-100';
+
+            const cardContent = document.createElement('div');
+            cardContent.className = 'card-body';
+
+            const cardTitle = document.createElement('h5');
+            cardTitle.className = 'card-title';
+
+            const cardLink = document.createElement('a');
+            cardLink.href = `html/detail.html?university=${university}&news=${link}`;
+            cardLink.textContent = title;
+
+            cardTitle.appendChild(cardLink);
+
+            const cardTags = document.createElement('p');
+            cardTags.className = 'card-text';
+            tags.forEach(tag => {
+                const span = document.createElement('span');
+                span.className = `badge tag-${university.toLowerCase()}`; // Use a classe específica da universidade
+                span.textContent = `#${tag}`;
+                cardTags.appendChild(span);
+                cardTags.appendChild(document.createTextNode(' '));
+            });
+
+            const cardDate = document.createElement('p');
+            cardDate.className = 'card-text';
+            cardDate.textContent = date;
+
+            cardContent.appendChild(cardTitle);
+            cardContent.appendChild(cardTags);
+            cardContent.appendChild(cardDate);
+
+            cardBody.appendChild(cardContent);
+            card.appendChild(cardBody);
+
+            return card;
+        }
+
+        // Function to fetch and display news
+        function fetchNews(query, append = false) {
+            fetch(`http://127.0.0.1:5000/universities?${query}&page=${currentPage}&size=${pageSize}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (!append) {
+                        contentCards.innerHTML = ''; // Clear previous cards
+                    }
+
+                    // Sort the news by date in descending order
+                    data.sort((a, b) => new Date(b.date.split('-').reverse().join('-')) - new Date(a.date.split('-').reverse().join('-')));
+
+                    data.forEach(news => {
+                        const card = createCard(news.title, news.date, [news.university, news.tag], news.id, news.university);
+                        contentCards.appendChild(card);
+                    });
+
+                    if (data.length < pageSize) {
+                        observer.disconnect(); // Stop observing if no more cards to load
+                    }
+
+                    // Hide the filter box
+                    filterBox.hide();
+                })
+                .catch(error => {
+                    console.error("Error fetching news:", error);
+                });
+        }
+
+        // Apply filter button click event
+        applyButton.addEventListener('click', () => {
+            const selectedUnits = Array.from(document.querySelectorAll('input[type=checkbox]:checked')).map(cb => cb.value);
+            const startDate = document.getElementById('startDate').value;
+            const endDate = document.getElementById('endDate').value;
+            const type = document.getElementById('typeSelect').value;
+
+            let query = '';
+
+            if (selectedUnits.length > 0) {
+                query += `units=${selectedUnits.join(',')}&`;
+            }
+
+            if (startDate) {
+                query += `startDate=${startDate}&`;
+            }
+
+            if (endDate) {
+                query += `endDate=${endDate}&`;
+            }
+
+            if (type && type !== 'Nenhum') {
+                query += `type=${type}&`;
+            }
+
+            currentQuery = query;
+            currentPage = 1;
+            fetchNews(currentQuery);
+        });
+
+        // Search button click event
+        const searchFunction = () => {
+            const searchTermsValue = searchTerms.value;
+            let query = `q=${searchTermsValue}`;
+            currentQuery = query;
+            currentPage = 1;
+            fetchNews(currentQuery);
+        };
+
+        searchButton.addEventListener('click', searchFunction);
+
+        searchTerms.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                searchFunction();
+            }
+        });
+
+        // Scroll to top when filter button is clicked
+        filterButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Initial fetch to populate cards
+        fetchNews('');
+
+        // Infinite scroll observer
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                currentPage++;
+                fetchNews(currentQuery, true);
+            }
+        }, {
+            rootMargin: '0px',
+            threshold: 1.0
+        });
+
+        observer.observe(scrollAnchor);
+    });
+    </script>
+
+</body>
+</html>

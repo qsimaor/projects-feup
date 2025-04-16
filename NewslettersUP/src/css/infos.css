@@ -1,0 +1,64 @@
+body {
+    padding-top: 30px;
+    background-color: #f0f0f0;
+}
+
+.card-filters {
+    width: 80%;
+}
+
+.card-filters.show {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.badge-secondary {
+    background-color: #6c757d;
+    color: black;
+}
+
+.badge-black {
+    background-color: #6c757d;
+    color: black;
+}
+
+.navbar-brand p {
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+}
+
+.additional-space {
+    height: 100px;
+}
+
+.footer {
+    background-color: #6c757d;
+    color: white;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer .container-fluid {
+    padding: 1rem;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+.navbar .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+}
+
+.btn-back {
+    margin-bottom: 100px;
+    background-color: #9ea7ad;
+    color: white;
+    border: none;
+}
+
+.btn-back:hover {
+    background-color: #b3b9bf;
+}

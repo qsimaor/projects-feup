@@ -1,0 +1,168 @@
+/* zeynepjs menu styles */
+.secondary-zeynep {
+    background-color: #ffffff;
+    color: #404143;
+    width: 380px;
+}
+
+
+.secondary-zeynep .zeynep .mobile-header {
+    height: 60px;
+    background-color: #d5d5d5;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.secondary-zeynep .zeynep .mobile-header:first-child {
+    height: 85px;
+}
+
+.secondary-zeynep .zeynep .mobile-header svg {
+    height: 80px;
+}
+
+.secondary-zeynep .zeynep .mobile-header img {
+    height: 2.3em;
+}
+
+.secondary-zeynep .zeynep .submenu-header {
+    height: 85px;
+    background-color: #d5d5d5;
+}
+
+.secondary-zeynep .zeynep .mobile-search {
+    padding: 1.3em;
+}
+
+.secondary-zeynep .zeynep .mobile-search input {
+    border: 1px solid #d5d5d5;
+    padding: .4em .8em;
+    width: 100%;
+}
+
+.secondary-zeynep .zeynep .mobile-search button {
+    position: absolute;
+    right: 0;
+    height: 2.4em;
+    width: 2.4em;
+    background-color: transparent;
+    border: none;
+}
+
+.secondary-zeynep ul {
+    list-style-type: none;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.secondary-zeynep ul > li {
+    display: block;
+}
+
+.secondary-zeynep ul > li > a {
+    color: inherit;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 18px 20px;
+    text-decoration: none;
+    transition: all 150ms;
+}
+
+.secondary-zeynep ul > li > a:hover {
+    background-color: #efefef;
+    border-radius: 0;
+}
+
+.secondary-zeynep ul > li > a {
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.secondary-zeynep ul > li.has-submenu > a {
+    background-image: url("../../../../../media/svgs/ChevronLeft.svg");
+    background-position: right 20px center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    text-transform: uppercase;
+    font-size: .8em;
+    line-height: 1em;
+}
+
+.secondary-zeynep ul > li.has-submenu > a {
+    background-image: url("../../../../../media/svgs/ChevronRightLittle.svg");
+}
+
+/* zeynepjs submenu styles */
+.secondary-zeynep .submenu {
+    background-color: #ffffff;
+    left: 380px;
+}
+
+.secondary-zeynep .submenu-header {
+    background-image: url("../../../../../media/svgs/ChevronLeftLittle.svg");
+    background-position: left 20px center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    border-bottom: solid 1px #d5d5d5;
+    cursor: pointer;
+    position: relative;
+}
+
+.secondary-zeynep .submenu-header > a {
+    color: inherit;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 29px 20px 24px 59px;
+    text-decoration: none;
+}
+
+.secondary-zeynep .submenu-header > a:before {
+    background-image: url("../submenu-arrow.svg");
+    background-position: right 20px center;
+    background-repeat: no-repeat;
+    background-size: 8px 14px;
+    content: "";
+    height: 100%;
+    left: 26px;
+    position: absolute;
+    top: 0;
+    transform: rotate(-180deg);
+    width: 20px;
+}
+
+.secondary-zeynep .submenu > label {
+    color: #e77691;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 19px;
+    opacity: .5;
+    padding-left: 40px;
+    width: 100%;
+}
+
+/*ENSURE SEARCH INPUT DOESNT STAY ON TOP OF SUBMENUS*/
+
+.secondary-zeynep .submenu.opened {
+    z-index: 1;
+}
+
+.secondary-zeynep .current {
+    z-index: 1;
+}
+
+.lang-up a:first-child {
+    padding-right: 1em;
+}
+
+.lang-up {
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: right;
+}
+
+.lang-up .text-muted {
+    color: black !important;
+}

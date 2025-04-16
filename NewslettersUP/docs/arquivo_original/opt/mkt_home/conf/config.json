@@ -1,0 +1,406 @@
+{
+	"connection": [
+		{
+			"host": "127.0.0.1",
+			"user": "timelineuser",
+			"password": "UmaPasswordMuitoSegura"
+		}
+	],
+	"_default_": [
+                {
+                        "publication": "newsletter",
+                        "category_id": "1",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "width": "800",
+                        "height": "600",
+                        "scrollto_x": "0",
+                        "scrollto_y": "0",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                }
+	],
+	"alumni": [
+		{
+			"publication": "newsletter",
+                        "category_id": "5",
+			"start_from_id": "1",
+			"end_on_id": "0",
+                        "width": "800",
+			"height": "600",
+			"scrollto_x": "0",
+			"scrollto_y": "320",
+			"thumbnail_x": "300",
+			"thumbnail_y": "533"
+		}
+	],
+        "cultura": [
+                {
+                        "publication": "newsletter",
+                        "category_id": "2",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "date_start": "2021",
+                        "date_end": "0",
+                        "width": "800",
+                        "height": "600",
+                        "scrollto_x": "0",
+                        "scrollto_y": "590",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                }
+        ],
+        "ispup": [
+                {
+                        "publication": "newsletter",
+                        "category_id": "3",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "date_start": "2020",
+                        "date_end": "0",
+                        "width": "800",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "433",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                }
+        ],
+        "icbas": [
+                {
+                        "publication": "newsletter",
+                        "category_id": "11",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "date_start": "2022",
+                        "date_end": "0",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "0",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                }
+        ],
+        "feup": [
+                {
+                        "publication": "feupworld",
+                        "category_id": "12",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+			"date_start": "2022",
+			"date_end": "2022",
+                        "width": "600",
+                        "height": "525",
+                        "scrollto_x": "0",
+                        "scrollto_y": "360",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                },
+                {
+                        "publication": "feupworld2023",
+                        "category_id": "18",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+			"date_start": "2023",
+			"date_end": "0",
+                        "width": "600",
+                        "height": "505",
+                        "scrollto_x": "0",
+                        "scrollto_y": "245",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                },
+                {
+                        "publication": "communityofchange",
+                        "category_id": "16",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "date_start": "2022",
+                        "date_end": "0",
+                        "width": "498",
+                        "height": "586",
+                        "scrollto_x": "40",
+                        "scrollto_y": "29",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                },
+		{
+                        "publication": "highlights",
+                        "category_id": "11",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "124",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                },
+                {
+                        "publication": "feup-dna",
+                        "category_id": "21",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+			"date_start": "2024",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "124",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                }
+        ],
+       "faup": [
+                {
+                        "publication": "emailing",
+                        "category_id": "3",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "date_start": "2021",
+                        "date_end": "0",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "285",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                },
+                {
+                        "publication": "newsletter",
+                        "category_id": "1",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "date_start": "2021",
+                        "date_end": "0",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "268",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                }
+        ],
+      "fpce": [
+                {
+                        "publication": "newsletter-cpup",
+                        "category_id": "8",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "590",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                },                {
+                        "publication": "newsletter-sec",
+                        "category_id": "12",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "590",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                },
+                {
+                        "publication": "newsletter-fpceup",
+                        "category_id": "6",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "210",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                }
+        ],
+      "fcup": [
+                {
+                        "publication": "noticias-fcup",
+                        "category_id": "1",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "date_start": "2021",
+                        "date_end": "0",
+                        "width": "600",
+                        "height": "590",
+                        "scrollto_x": "0",
+                        "scrollto_y": "310",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                }
+	],
+      "fep": [
+                {
+                        "publication": "newsletter",
+                        "category_id": "19",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "date_start": "2021",
+                        "date_end": "0",
+                        "width": "600",
+                        "height": "540",
+                        "scrollto_x": "0",
+                        "scrollto_y": "202",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                }
+        ],
+      "fmup": [
+                {
+                        "publication": "newsletter-fmup",
+                        "category_id": "4",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "371",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                }
+        ],
+      "fmdup": [
+                {
+                        "publication": "newsletter",
+                        "category_id": "3",
+                        "start_from_id": "1",
+			"date_start": "2023",
+                        "end_on_id": "0",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "297",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                }
+        ],
+     "reitoria": [
+                {
+                        "publication": "sip",
+                        "category_id": "13",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "date_start": "2021",
+                        "date_end": "2022",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "393",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                }
+        ],
+     "sipreitoria": [
+                {
+                        "publication": "timeline",
+                        "category_id": "16",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "date_start": "2022",
+                        "date_end": "0",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "393",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                }
+        ],
+     "updigital": [
+                {
+                        "publication": "newsletter",
+                        "category_id": "42",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "date_start": "2023",
+                        "date_end": "0",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "214",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                }
+        ],
+     "fcnaup": [
+                {
+                        "publication": "newsletter",
+                        "category_id": "7",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "date_start": "2023",
+                        "date_end": "0",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "0",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                }
+        ],
+     "flup": [
+                {
+                        "publication": "uec-newsletter",
+                        "category_id": "38",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "date_start": "2022",
+                        "date_end": "0",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "0",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                },
+                {
+                        "publication": "uec-formacao-professores",
+                        "category_id": "56",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "date_start": "2022",
+                        "date_end": "0",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "0",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                },
+                {
+                        "publication": "newsletter-flup",
+                        "category_id": "47",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "date_start": "2022",
+                        "date_end": "0",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "0",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                },
+                {
+                        "publication": "esta-semana-na-flup",
+                        "category_id": "57",
+                        "start_from_id": "1",
+                        "end_on_id": "0",
+                        "date_start": "2023",
+                        "date_end": "0",
+                        "width": "600",
+                        "height": "800",
+                        "scrollto_x": "0",
+                        "scrollto_y": "0",
+                        "thumbnail_x": "300",
+                        "thumbnail_y": "533"
+                }
+        ]
+
+}
+

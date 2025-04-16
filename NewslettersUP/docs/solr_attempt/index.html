@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arquivo U. Porto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .card-title a {
+            color: blue;
+            text-decoration: underline;
+        }
+        .card-title a:hover {
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="page-container" class="d-flex flex-column min-vh-100">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/UPORTO_positivo_fundotransparente.png" alt="U.Porto" height="30">
+                    Arquivo
+                </a>
+
+                <form class="d-flex my-2 my-lg-0 mx-auto" style="width: 50%;" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Digite os termos de pesquisa..." aria-label="Search" id="searchInput">
+                    <button class="btn btn-primary btn-outline-black" type="submit">Pesquisar</button>
+                </form>
+
+                <button id="filterButton" class="btn btn-primary ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#filterBox" aria-expanded="false" aria-controls="filterBox">Filtros</button>
+
+                <div class="dropdown ms-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="html/about.html">Sobre</a></li>
+                        <li><a class="dropdown-item" href="#">Declaração de Acessibilidade</a></li>
+                        <li><a class="dropdown-item" href="html/conditions.html">Termos e Condições</a></li>
+                        <li><a class="dropdown-item" href="html/policy.html">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main content -->
+        <div id="content-wrap" class="flex-grow-1">
+            <!-- Filters card (hidden by default) -->
+            <div class="container mt-5 pt-3">
+                <div class="collapse" id="filterBox">
+                    <div class="card card-filters mb-3 mx-auto" style="width: 70%;">
+                        <div class="card-header">Filtros</div>
+                        <div class="card-body">
+
+                            <h5 class="card-title">Unidade Orgânica</h5>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="feup">
+                                <label class="form-check-label" for="feup">FEUP</label>
+                            </div>
+
+                            <h5 class="card-title mt-3">Data</h5>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="startDate" class="form-label">Data Inicial</label>
+                                    <input type="date" class="form-control" id="startDate" name="startDate">
+                                </div>
+                                <div class="col">
+                                    <label for="endDate" class="form-label">Data Final</label>
+                                    <input type="date" class="form-control" id="endDate" name="endDate">
+                                </div>
+                            </div>
+
+                            <h5 class="card-title mt-3">Tipo</h5>
+                            <select class="form-select" aria-label="Tipo select">
+                                <option selected>0 selecionados</option>
+                            </select>
+
+                            <h5 class="card-title mt-3">Ordenação</h5>
+                            <select class="form-select" aria-label="Ordenação select">
+                                <option selected>Mais recente primeiro</option>
+                            </select>
+
+                            <div class="d-grid gap-2 mt-3">
+                                <button class="btn btn-primary" type="button">Aplicar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Cards -->
+                <div class="row mt-4" id="content-cards">
+                    <!-- Cards serão adicionados aqui dinamicamente -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer bg-secondary py-3">
+            <div class="container-fluid text-center">
+                <p class="mb-0">©2024 UPDigital</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contentCards = document.getElementById('content-cards');
+
+            function createCard(news) {
+                const colDiv = document.createElement('div');
+                colDiv.className = 'col-md-3 mb-4';
+
+                const cardDiv = document.createElement('div');
+                cardDiv.className = 'card h-100';
+
+                const cardBody = document.createElement('div');
+                cardBody.className = 'card-body';
+
+                const cardTitle = document.createElement('h5');
+                cardTitle.className = 'card-title';
+
+                const cardLink = document.createElement('a');
+                cardLink.href = `detail.html?university=${news.university}&news=${news.id}`;
+                cardLink.textContent = news.title;
+                cardLink.target = '_blank';
+
+                cardLink.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    fetch(`http://127.0.0.1:5000/universities/${news.university}/news/${news.id}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.preview_link) {
+                                window.open(data.preview_link, '_blank');
+                            } else if (data.html_path) {
+                                window.open(data.html_path, '_blank');
+                            }
+                        })
+                        .catch(error => {
+                            console.error("Error fetching news:", error);
+                            window.open(`detail.html?university=${news.university}&news=${news.id}`, '_blank');
+                        });
+                });
+
+                cardTitle.appendChild(cardLink);
+
+                const cardTags = document.createElement('p');
+                cardTags.className = 'card-text';
+                const universityTag = document.createElement('span');
+                universityTag.className = 'badge bg-secondary text-dark';
+                universityTag.textContent = `#${news.university}`;
+                const tagTag = document.createElement('span');
+                tagTag.className = 'badge bg-secondary text-dark';
+                tagTag.textContent = `#${news.tag}`;
+
+                cardTags.appendChild(universityTag);
+                cardTags.appendChild(document.createTextNode(' '));
+                cardTags.appendChild(tagTag);
+
+                const cardDate = document.createElement('p');
+                cardDate.className = 'card-text';
+                cardDate.textContent = news.date ? new Date(news.date).toLocaleDateString() : '';
+
+                cardBody.appendChild(cardTitle);
+                cardBody.appendChild(cardTags);
+                cardBody.appendChild(cardDate);
+                cardDiv.appendChild(cardBody);
+                colDiv.appendChild(cardDiv);
+
+                return colDiv;
+            }
+
+            function fetchNews(query) {
+                fetch(`http://127.0.0.1:5000/search?q=${encodeURIComponent(query)}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        contentCards.innerHTML = '';  // Clear current cards
+                        data.forEach(news => {
+                            contentCards.appendChild(createCard(news));
+                        });
+                    })
+                    .catch(error => console.error("Error fetching news:", error));
+            }
+
+            document.getElementById('searchForm').addEventListener('submit', (event) => {
+                event.preventDefault();
+                const query = document.getElementById('searchInput').value || '*:*';  // Ensure there's a default value
+                fetchNews(query);
+            });
+
+            fetchNews('*:*');  // Load all cards on initial load
+        });
+    </script>
+</body>
+</html>

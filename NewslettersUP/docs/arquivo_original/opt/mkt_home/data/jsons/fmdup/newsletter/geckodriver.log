@@ -1,0 +1,37 @@
+1680704885072	geckodriver	INFO	Listening on 127.0.0.1:40633
+1680704885501	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--width=600" "--height=800" "--remote-debugging-port" "56251" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileqBwNHD"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: libGL.so.1 missing
+1680704889105	Marionette	INFO	Marionette enabled
+1680704889109	Marionette	INFO	Listening on port 33031
+console.error: "Warning: unrecognized command line flag -width\n"
+console.error: "Warning: unrecognized command line flag -height\n"
+WebDriver BiDi listening on ws://127.0.0.1:56251
+Read port: 33031
+1680704889379	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqBwNHD/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56251/devtools/browser/76212004-e8c4-420a-baa6-72fd9dd96149
+1680704892310	Marionette	INFO	Stopped listening on port 33031
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 693: TypeError: this.tablesData[table] is undefined
+1680704892968	geckodriver	INFO	Listening on 127.0.0.1:46265
+1680704893471	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--width=600" "--height=800" "--remote-debugging-port" "37453" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileaVkDQY"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: libGL.so.1 missing
+1680704895552	Marionette	INFO	Marionette enabled
+1680704895555	Marionette	INFO	Listening on port 39257
+Read port: 39257
+console.error: "Warning: unrecognized command line flag -width\n"
+console.error: "Warning: unrecognized command line flag -height\n"
+WebDriver BiDi listening on ws://127.0.0.1:37453
+1680704895659	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileaVkDQY/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:37453/devtools/browser/c2cda385-e9e1-44cf-a89d-e413f5697511
+1680704899455	Marionette	INFO	Stopped listening on port 39257
